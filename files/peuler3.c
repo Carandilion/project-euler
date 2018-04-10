@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <math.h>
+
+// int psquare(float x){
+//   int comp = sqrt(x);
+//   if(comp*comp==x)
+//     return 1;
+//   else
+//     return 0;
+// }
+
+int chkprime(int x){
+  int count=0,i=0;
+  for(i=2;i<=(x/2);i++){
+    if(x%i==0){
+      count++;
+    }
+  }
+  if(count==0)
+    return 1;
+  else
+    return 0;
+}
+
+void main(void){
+  unsigned long bigjohn;
+  int i=0,div=0;
+  scanf("%lu",&bigjohn);
+  // if(psquare(bigjohn))
+  //   sroot=sqrt(bigjohn);
+  // else
+  //   sroot=sqrt(bigjohn)+1;*/
+  // printf("\nDebug Valor Raiz: %i\n\n",sroot);
+    for(i=2;i<bigjohn;i++){
+      if(bigjohn%i==0){
+        if(chkprime(i)==1){
+          div=i;
+        }
+      }
+    }
+  printf("\nMaior Divisor Primo: %i \n\n",div);
+}
