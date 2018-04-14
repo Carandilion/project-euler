@@ -2,14 +2,6 @@
 #include "gmp.h"
 #define line 20
 #define row 20
-
-// unsigned long long fat(unsigned long long x){   PARA LINHAS E COLUNAS EM QUE A SOMA É MAIOR QUE 20! É NECESSÁRIO USAR GMP OU SOLUÇÃO PARECIDA.
-//   if(x==1)
-//     return 1;
-//   else
-//     return x*fat(x-1);
-// }
-
 void path(int l,int c){
   mpz_t fatlc,fatl,fatc,answer,temp;
   unsigned int i;
@@ -35,7 +27,6 @@ void path(int l,int c){
   printf("\n\n%s paths.\n\n",mpz_get_str(NULL, 10, answer));
 
 }
-
 int main(int argc, char const *argv[]) {
   int map[line][row];
   unsigned long long counter,n,k;
@@ -46,8 +37,6 @@ int main(int argc, char const *argv[]) {
     }
   }
   printf("\n\n");
-  // counter=(fat(line+row))/(fat(line)*fat(row));      
-  // printf("\n\n %llu paths.\n\n",counter);
   path(line,row);
   return 0;
 }

@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int chkprime(int x){                                       // VERIFICA SE O NÚMERO É UM NÚMERO PRIMO
+int chkprime(int x){
   int count=0,i=0;
   for(i=2;i<=(x/2);i++){
     if(x%i==0){
@@ -12,7 +11,6 @@ int chkprime(int x){                                       // VERIFICA SE O NÚM
   else
     return 0;
 }
-
 void main(void){
   int i=2,index=1;
   do{
@@ -21,5 +19,5 @@ void main(void){
       index++;
     }
   i++;
-  }while(index!=10002);                                    // ACHA UM PRIMO DE INDEX N-1 IE 10001
+  }while(index!=10002);
 }
