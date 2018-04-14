@@ -1,8 +1,6 @@
 #include <stdio.h>
 #define size 1000
-
 long long sumnext(int numbers[],int x){
-  // printf("\nhere:%i\n\n",numbers[x]);
   long long sum=1;
   int i;
   for(i=x;i<(x+13);i++){
@@ -11,7 +9,6 @@ long long sumnext(int numbers[],int x){
   printf("\n%lli\n\n",sum);
   return sum;
 }
-
 void main(void){
   int i;
   long long max=0;

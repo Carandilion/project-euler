@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void main(){
   int div[20],i=0,count=0;
   for(i=0;i<20;i++)
@@ -8,11 +7,9 @@ void main(){
   do{
     for(int pos=18;pos>2;pos--){
         if(i%div[pos]==0){
-          // printf("\ndiv found");
           count++;
         }
         else{
-          // printf("\n Denied");
           break;
         }
     }
@@ -21,7 +18,6 @@ void main(){
       break;
     }
     i+=20;
-    // printf("\n%i\n\n",i);
     count=0;
   }while(count!=16);
 }

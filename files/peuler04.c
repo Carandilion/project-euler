@@ -1,17 +1,11 @@
 #include <stdio.h>
 int paln(int n){
   int reverso=0,origem=n,resto;
-  // printf("\nORIGINAL = %i\n\n",n);
   while( n!=0 ){
     resto = n%10;
-    // printf("\nRESTO = %i\n\n",resto);
     reverso = reverso*10 + resto;
-    // printf("REVERSO = %i\n\n",reverso);
     n=n/10;
-    // printf("N = %i\n\n",n);
-    // printf("\n\n");
   }
-  // printf("\n\nREVERSO FINAL = %i\n\n",reverso);
   if(origem==reverso)
     return 1;
   else

@@ -18,7 +18,6 @@ void main(void){
       printf("[%i] ",x[i][j]);
     }
   }
-
   for(int i=0;i<20;i++){
     for(int j=0;j<20;j++){
       if(x[i][j]*x[i][j+1]*x[i][j+2]*x[i][j+3] > max && (i+3 < 20) && (j+3 < 20)) {

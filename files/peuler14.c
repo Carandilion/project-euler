@@ -1,8 +1,7 @@
 #include "stdio.h"
 #define size 1000000
-
-int collatzsize(unsigned long long x){        //A MAIOR ITERAÇÃO SEMPRE VAI SER DE UM NÚMERO IMPAR
-  int count=0;                                //ENTÃO EU VOU RETIRAR A VERIFICAÇÃO DE PARES.
+int collatzsize(unsigned long long x){
+  int count=0;
   if(x%2==0){
     return 0;
   }
@@ -18,9 +17,7 @@ int collatzsize(unsigned long long x){        //A MAIOR ITERAÇÃO SEMPRE VAI SE
   }
   return count;
 }
-
 int main(int argc, char const *argv[]) {
-  // printf("%i\n",collatzsize(97));
   int biggest=0,index=0,temp;
   for (int i = size; i > size/2; i--) {
     temp=collatzsize(i);

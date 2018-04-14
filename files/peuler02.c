@@ -1,6 +1,5 @@
 #include <stdio.h>
 #define size 9999
-
 int main(){
   int sum=0,i=0,x[size];
   x[0]=1;

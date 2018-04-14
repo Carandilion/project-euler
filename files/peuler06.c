@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <math.h>
-
 int sumpow(int x){
   if(x==1)
     return 1;
   else
     return x+sumpow(x-1);
 }
-
 double powsum(double x){
   if(x==1)
     return 1;
