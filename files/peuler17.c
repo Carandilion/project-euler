@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 int main(int argc, char const *argv[]) {
   unsigned long long sum=0;
   char *unidade[21]=
@@ -13,7 +12,6 @@ int main(int argc, char const *argv[]) {
   "fifty","sixty","seventy","eighty","ninety"};
   char *centena[10]={"","onehundred","twohundred","threehundred","fourhundred","fivehundred","sixhundred",
   "sevenhundred","eighthundred","ninehundred"};
-
   for (size_t c = 0; c < 10; c++) {
     for (size_t d = 0; d < 10; d++) {
       for (size_t u = 0; u < 10; u++) {
@@ -28,10 +26,8 @@ int main(int argc, char const *argv[]) {
       }
     }
   }
-  // CONSIDERANDO 1000(onethousand, 11 letras) E OS ANDS (99 para todo intervalo entre as centenas)
   sum+=11;
   sum=sum+(99*9*3);
-  // printf("\n\n%li\n\n",strlen(centena[0])+strlen(dezena[0])+strlen(unidade[19]))
   printf("\n\nSUM of all letters is %llu.\n\n",sum);
   return 0;
 }

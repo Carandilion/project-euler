@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-
-// (a^2)+(b^2)=(c^2) , tal que a+b+c=1000.
 void main(void){
   int a=0,b=0,c=0,i=0,j=0,z=0;
   for(i=1;i<1000;i++){

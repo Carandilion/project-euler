@@ -1,22 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-
-// int chkprime(int x){                                    
-//   int count=0,i=0;
-//   for(i=2;i<=(x/2);i++){
-//     if(x%i==0){
-//       count++;
-//       break;
-//     }
-//   }
-//   if(count==0){
-//     // printf("\nprime found\n\n");
-//     return 1;
-//   }
-//   else
-//     return 0;
-// }
-
 bool chkprime(long n){
 	if (n <= 1) {
 		return false;
@@ -40,7 +23,6 @@ bool chkprime(long n){
 		return true;
 	}
 }
-
 void main(void){
     long sum=0;
     for(int i=2;i<2000000;i++){

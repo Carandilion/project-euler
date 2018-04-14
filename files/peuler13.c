@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <gmp.h>
 #include <string.h>
-
 int main(void){
-
   char * numbers[100]={"37107287533902102798797998220837590246510135740250",
   "46376937677490009712648124896970078050417018260538",
   "74324986199524741059474233309513058123726617309629",
@@ -104,15 +102,6 @@ int main(void){
   "72107838435069186155435662884062257473692284509516",
   "20849603980134001723930671666823555245252804609722",
   "53503534226472524250874054075591789781264330331690"};
-
-  // char atual[50],digit;
-  // unsigned long long sum=0;
-  // for(int i=0;i<100;i++){
-  //   strcpy(atual,numbers[i]);                                                
-  //   digit=atual[49] - '0';
-  //   sum+=digit;
-  //   printf("\nAdding int %i to Sum, resulting in %llu",digit,sum);
-  // }
   mpz_t x,rslt;
   mpz_init_set_str(rslt,"0",10);
   printf("\nRESULT SET IN %s\n",mpz_get_str (NULL, 10, rslt));
